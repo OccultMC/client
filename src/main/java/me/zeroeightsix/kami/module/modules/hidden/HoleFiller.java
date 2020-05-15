@@ -1,4 +1,4 @@
-package me.zeroeightsix.kami.module.modules.experimental;
+package me.zeroeightsix.kami.module.modules.hidden;
 
 import me.zero.alpine.listener.EventHandler;
 import me.zero.alpine.listener.Listener;
@@ -39,7 +39,7 @@ import static me.zeroeightsix.kami.util.MessageSendHelper.sendChatMessage;
  * Created by polymer on 12/03/20
  */
 
-@Module.Info(name = "HoleFiller", category = Module.Category.PLAYER, description="Fills holes around the player to make people easier to crystal.")
+@Module.Info(name = "HoleFiller", category = Module.Category.HIDDEN, description="Fills holes around the player to make people easier to crystal.")
 public class HoleFiller extends Module {
     private Setting<Double> distance = register(Settings.d("Range", 4.0));
     private Setting<Boolean> render = register(Settings.b("Render Filled Blocks", false));
