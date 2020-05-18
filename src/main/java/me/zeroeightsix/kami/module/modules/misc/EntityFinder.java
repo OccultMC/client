@@ -17,8 +17,10 @@ import java.util.UUID;
 
 import static me.zeroeightsix.kami.util.MessageSendHelper.sendChatMessage;
 
-@Module.Info(name = "Donkey Finder", category = Module.Category.MISC, description = "Finds you a Donkey!")
-public class DonkeyFind extends Module {
+@Module.Info(name = "EntityFinder", category = Module.Category.MISC, description = "Finds you a Donkey!")
+public class EntityFinder extends Module {
+    private Setting<Boolean> Llama = register(Settings.b("Llama", false));
+    private Setting<Boolean> Donkey = register(Settings.b("Donkey", false));
 
     private List<String> knownPlayers;
     boolean test = false;
@@ -30,9 +32,17 @@ public class DonkeyFind extends Module {
         List<Integer> tickPlayerList = new ArrayList<>();
 
         for (Entity entity : mc.world.getLoadedEntityList()) {
-            if (entity instanceof EntityDonkey) {
-                sendChatMessage("I found a donkey at: " + Math.round(entity.lastTickPosX) + " " + Math.round(entity.lastTickPosY) + " " + Math.round(entity.lastTickPosZ));
+            if(Donkey.getValue().equals(true)){
+                if (entity instanceof EntityDonkey) {
+                    sendChatMessage("I found a donkey at: " + Math.round(entity.lastTickPosX) + " " + Math.round(entity.lastTickPosY) + " " + Math.round(entity.lastTickPosZ));
+                }
             }
+            if(Llama.getValue().equals(true)){
+                if (entity instanceof EntityLlama) {
+                    sendChatMessage("I found a llama at: " + Math.round(entity.lastTickPosX) + " " + Math.round(entity.lastTickPosY) + " " + Math.round(entity.lastTickPosZ));
+                }
+            }
+
 
 
             if (tickPlayerList.size() > 0) {
