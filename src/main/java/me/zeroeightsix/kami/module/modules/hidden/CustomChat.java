@@ -30,8 +30,8 @@ public class CustomChat extends Module {
     private String getText(TextMode t) {
         switch (t) {
             case NAME: return "\u1d0f\u0299\u1d00\u1d0d\u1d00\u029c\u1d00\u1d04\u1d0b";
-            case ON_TOP: return "\u1d0f\u0299\u1d00\u1d0d\u1d00\u029c\u1d00\u1d04\u1d0b";
-            case WEBSITE: return "\u1d0f\u0299\u1d00\u1d0d\u1d00\u029c\u1d00\u1d04\u1d0b";
+            case ON_TOP: return "\u1d0f\u0299\u1d00\u1d0d\u1d00\u029c\u1d00\u1d04\u1d0b \u1d0f\u0274 \u1d1b\u1d0f\u1d18";
+            case WEBSITE: return "\u1d0f\u0299\u1d00\u1d0d\u1d00\u1d05\u1d07\u1d20\u1d07\u029f\u1d0f\u1d18\u1d0d\u1d07\u0274\u1d1b\u002e\u1d04\u0493";
             case JAPANESE: return "\u1d0f\u0299\u1d00\u1d0d\u1d00\u029c\u1d00\u1d04\u1d0b";
             case CUSTOM: return customText.getValue();
             default: return "";

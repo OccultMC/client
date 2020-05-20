@@ -62,9 +62,9 @@ public class KamiMod {
 
     public static final String MODNAME = "ObamaHack";
     public static final String MODID = "obamahack";
-    public static final String MODVER = "v0.2.3";
-    public static final String MODVERSMALL = " v0.2.3";
-    public static final String MODVERBROAD = "v0.2.3";
+    public static final String MODVER = "v0.2.5";
+    public static final String MODVERSMALL = "v0.2.5";
+    public static final String MODVERBROAD = "v0.2.5";
 
     public static final String MCVER = "1.12.2";
 
@@ -72,7 +72,7 @@ public class KamiMod {
     
     private static final String UPDATE_JSON = "https://raw.githubusercontent.com/kami-blue/assets/assets/assets/updateChecker.json";
     public static final String DONATORS_JSON = "https://raw.githubusercontent.com/kami-blue/assets/assets/assets/donators.json";
-    public static final String CAPES_JSON = "https://raw.githubusercontent.com/kami-blue/assets/assets/assets/capes.json";
+    public static final String CAPES_JSON = "https://raw.githubusercontent.com/obamadevelopment/addons/master/caps.json";
     public static final String GITHUB_LINK = "pornhub.com/obama";
     public static final String WEBSITE_LINK = "pornhub.com/obama";
 
@@ -111,7 +111,7 @@ public class KamiMod {
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event) {
         setCustomIcons();
-        Display.setTitle(MODNAME + MODVERSMALL);
+        Display.setTitle(MODNAME + " --> " + MODVERSMALL);
     }
 
     @Mod.EventHandler

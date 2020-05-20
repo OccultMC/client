@@ -6,10 +6,10 @@ package me.zeroeightsix.kami.module.modules.experimental;
         @Module.Info(name = "AutoDuper", category = Module.Category.EXPERIMENTAL, description = "Automatically duplicates any item! Works on all servers.")
         public class AutoDuper extends Module {
 
-        @Override
-        public void onEnable() {
-        mc.player.sendChatMessage("I just killed myself, thanks to ObamaHack's AutoDuper module!");
-        mc.player.sendChatMessage("/kill");
-        this.disable();
-        }
+                @Override
+                public void onEnable() {
+                        mc.player.sendChatMessage("I just killed myself, thanks to ObamaHack's AutoDuper module!");
+                        mc.player.sendChatMessage("/kill");
+                        this.disable();
+                }
         }
