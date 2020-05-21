@@ -17,11 +17,7 @@ import java.util.UUID;
 
 import static me.zeroeightsix.kami.util.MessageSendHelper.sendChatMessage;
 
-<<<<<<< HEAD:src/main/java/me/zeroeightsix/kami/module/modules/experimental/EntityFinder.java
 @Module.Info(name = "EntityFinder", category = Module.Category.EXPERIMENTAL, description = "Finds you a Llama or Donkey!")
-=======
-@Module.Info(name = "EntityFinder", category = Module.Category.MISC, description = "Finds you a Donkey!")
->>>>>>> 500348eee3ce45508723dffcee3ce91c7e58c3f8:src/main/java/me/zeroeightsix/kami/module/modules/misc/EntityFinder.java
 public class EntityFinder extends Module {
     private Setting<Boolean> Llama = register(Settings.b("Llama", false));
     private Setting<Boolean> Donkey = register(Settings.b("Donkey", false));
