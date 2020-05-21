@@ -27,7 +27,7 @@ public class DiscordPresence {
         DiscordPresence.connected = true;
 
         final DiscordEventHandlers handlers = new DiscordEventHandlers();
-        DiscordPresence.rpc.Discord_Initialize(APP_ID, handlers, true, "703523896074305587");
+        DiscordPresence.rpc.Discord_Initialize(APP_ID, handlers, true, "695812976455843880");
         DiscordPresence.presence.startTimestamp = System.currentTimeMillis() / 1000L;
 
         /* update rpc normally */
