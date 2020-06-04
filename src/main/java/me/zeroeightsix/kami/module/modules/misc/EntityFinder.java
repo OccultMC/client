@@ -17,19 +17,16 @@ import java.util.UUID;
 
 import static me.zeroeightsix.kami.util.MessageSendHelper.sendChatMessage;
 
-@Module.Info(name = "EntityFinder", category = Module.Category.MISC, description = "Finds you a Donkey!")
+@Module.Info(name = "EntityFinder", category = Module.Category.MISC, description = "Finds you a entity!")
 public class EntityFinder extends Module {
     private Setting<Boolean> Llama = register(Settings.b("Llama", false));
     private Setting<Boolean> Donkey = register(Settings.b("Donkey", false));
 
-    private List<String> knownPlayers;
-    boolean test = false;
+
 
     @Override
     public void onUpdate() {
         if (mc.player == null) return;
-
-        List<Integer> tickPlayerList = new ArrayList<>();
 
         for (Entity entity : mc.world.getLoadedEntityList()) {
             if(Donkey.getValue().equals(true)){
@@ -45,17 +42,13 @@ public class EntityFinder extends Module {
 
 
 
-            if (tickPlayerList.size() > 0) {
 
-
-            }
         }
     }
 
 
             @Override
             public void onEnable () {
-                this.knownPlayers = new ArrayList<>();
 
             }
 
